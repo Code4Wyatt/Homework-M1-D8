@@ -6,7 +6,7 @@ const changeTitle = function (newTitle) {
   const title = document.querySelector("h1");
   title.innerText = newTitle;
 };
-changeTitle("new title");  
+changeTitle("New Title!");  
 
 /* EXERCISE 2
 Write a function for changing the class of the title of the page in "myHeading".
@@ -22,12 +22,16 @@ addClassToTitle();
 /* EXERCISE 3
 Write a function for changing the text of only the p which are children of a div.
 */
-let getP = document.querySelector("footer")[0];
+
 
 const changePcontent = function () {
-  getP = document.innerHTML() = "New P";
+ const paragraphs = document.querySelectorAll("div p");  // Declare new function and select all P elements in the first div
+ paragraphs.forEach((p) => {                             // forEach loop to target each <p> element
+     p.innerText = "New text!";                          // .innerText function and declaring the new text
+   }); 
+ };
   //
-};
+changePcontent()                                         // Calling the code
 
 
 
@@ -36,15 +40,20 @@ Write a function for changing the destination of every link to https://www.googl
 */
 
 const changeUrls = function () {
-  //
-};
+    const links = document.querySelectorAll("a");
+    links.forEach((link) => {
+      link.href = "https://www.google.com";
+    });
+  };
+  changeUrls();
 
 /* EXERCISE 5
  Write a function for adding a new item in the second list.
  */
 
 const addToTheSecond = function (content) {
-  //
+  const newItem = document.getElementById("secondList");
+  newItem.innerHTML += `<li>${content}</li>`;
 };
 
 /* EXERCISE 6
