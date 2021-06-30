@@ -55,7 +55,7 @@ const changeUrls = function () {
     const ul = document.querySelectorAll("ul")[1];
     ul.innerHTML += `<li>${content}</li>`;
     // const li = document.createElement("li"); /* longer way to do it/breakdown of above lines function */
-    // li.innerText = "new list item";
+    // li.innerText = "new item";
     // ul.appendChild(li);
   };
   addToTheSecond("new item");
@@ -65,6 +65,8 @@ Write a function for adding a second paragraph to the div.
 */
 
 const addParagraph = function (content) {
+    const newParagraph = document.querySelectorAll("div")[0];
+    dispatchEvent.innerHTML += `<p>${content}</p>`;
   //
 };
 
