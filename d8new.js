@@ -78,20 +78,26 @@ const firstUlDisappear = function () {
   const byeUI = document.querySelectorAll("ul")[0].style.visibility = "hidden";  // Starting to get it! Different method from answers, .style adds styling to the element and with .visibility added and set to hidden removes the element
 };  // could take out .style.visibility and have ul.remove(); here, would this cause faster or slower processing of the code?
 firstUlDisappear();
+
 /* EXERCISE 8
 Write a function for making the background of every UL green.
 */
 
 const paintItGreen = function () {
-  //
+  const goGreen = document.querySelectorAll("ul"); // Created function to select all the uls
+  goGreen.forEach((ul) => { // Targeted the new function with its declared name, used .forEach to select the uls and need clarification on how the rest of the sum works, can we just add a classList in this line instead as we have selected the uls with the above line already?
+      ul.classList.add("b-green");
+  });
 };
+paintItGreen();
 
 /* EXERCISE 9
 Make the heading of the page change color every time the user clicks on it.
 */
 
 const makeItClickable = function () {
-  //
+  const clickChange = document.querySelectorAll("h1");
+
 };
 
 /* EXERCISE 10
