@@ -51,10 +51,14 @@ const changeUrls = function () {
  Write a function for adding a new item in the second list.
  */
 
-const addToTheSecond = function (content) {
-  const newItem = document.getElementById("secondList");
-  newItem.innerHTML += `<li>${content}</li>`;
-};
+ const addToTheSecond = function (content) {
+    const ul = document.querySelectorAll("ul")[1];
+    ul.innerHTML += `<li>${content}</li>`;
+    // const li = document.createElement("li"); /* longer way to do it/breakdown of above lines function */
+    // li.innerText = "new list item";
+    // ul.appendChild(li);
+  };
+  addToTheSecond("new item");
 
 /* EXERCISE 6
 Write a function for adding a second paragraph to the div.
