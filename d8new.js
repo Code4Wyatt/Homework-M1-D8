@@ -65,10 +65,10 @@ Write a function for adding a second paragraph to the div.
 */
 
 const addParagraph = function (content) {
-    const newParagraph = document.querySelectorAll("div")[0];
-    dispatchEvent.innerHTML += `<p>${content}</p>`;
-  //
+    const newParagraph = document.querySelectorAll("div")[0]; // Creating new function and selecting the 1st div
+    newParagraph.innerHTML += `<p>${content}</p>`;  // Taking the new function by its given name (newParagraph) and using the .innerHTML and += functions to change the HTML content and concatenate it in addition to the previously available content
 };
+addParagraph("New Paragraph"); // Calling the function
 
 /* EXERCISE 7
 Write a function for making the first UL disappear.
