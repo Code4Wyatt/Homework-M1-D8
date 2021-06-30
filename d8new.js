@@ -16,8 +16,7 @@ Write a function for changing the class of the title of the page in "myHeading".
 const addClassToTitle = function () {
   const title = document.querySelector("h1");
   title.classList.add("myHeading");
-  }
-};
+  };
 addClassToTitle();
 
 /* EXERCISE 3
