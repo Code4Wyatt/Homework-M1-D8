@@ -75,9 +75,9 @@ Write a function for making the first UL disappear.
 */
 
 const firstUlDisappear = function () {
-  //
-};
-
+  const byeUI = document.querySelectorAll("ul")[0].style.visibility = "hidden";  // Starting to get it! Different method from answers, .style adds styling to the element and with .visibility added and set to hidden removes the element
+};  // could take out .style.visibility and have ul.remove(); here, would this cause faster or slower processing of the code?
+firstUlDisappear();
 /* EXERCISE 8
 Write a function for making the background of every UL green.
 */
